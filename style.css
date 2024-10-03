@@ -73,24 +73,58 @@ p.btn-text{
 }
 
 .or {
-    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
     text-align: center;
-    margin-bottom: 20px;
+    width: 100%; 
+}
+
+.or::before,
+.or::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ccc; 
+    margin: 0 10px; 
+}
+
+.or span {
+    white-space: nowrap; 
+    padding: 0 10px; 
 }
 
 .email-login {
+    position: relative;
     color: grey;
     text-align:justify;
     margin-bottom: 40px;
+    display: inline-block;
+    top: 20px;
+    width: 45px;
+    right: 150px;
+    
 }
 
 .email-login input{
+    position: relative;
+    color: grey;
+    text-align:justify;
+    margin-bottom: 30px;
+    width: 350px;
+    right: 5px;
+    height: 40px;
+}
+
+.email-login label{
+    position: relative;
     color: grey;
     text-align:justify;
     margin-bottom: 20px;
+    bottom: 10px;
 }
 
 .cta-btn {
+    position: relative;
     padding: 3%;
     width: 90%;
     border-radius: 10px;
@@ -98,10 +132,14 @@ p.btn-text{
     background-color: #3b50c7;
     color: white;
     margin-bottom: 30px;
+    cursor:pointer;
+    bottom: 20px;
 }
 
 
 .forget-pass {
+    position: relative;
     text-decoration: none;
     color: #3b50c7;
+    bottom: 45px;
 }
